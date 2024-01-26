@@ -1,4 +1,4 @@
-const { Menu, Tray } = require('electron');
+const { Tray } = require('electron');
 const { resolve } = require('path');
 const icon = resolve(__dirname, '../', 'assets', 'icon.png');
 

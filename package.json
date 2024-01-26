@@ -4,15 +4,29 @@
   "description": "Simple URL Preview for Developers.",
   "main": "electron/main.js",
   "scripts": {
-    "elec": "nodemon --exec electron .",
+    "elec": "electron .",
+    "builder": "electron-builder -p=always",
     "nodemon": "nodemon --exec electron ."
   },
-  "keywords": [],
+  "build": {
+    "productName": "Developer Preview",
+    "appId": "com.alaskcode.developerpreview",
+    "nsis": {
+      "publish": {
+        "provider": "github",
+        "owner": "Alask-code",
+        "repo": "Developer-Preview"
+      },
+      "oneClick": false
+    }
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@electron-internal/eslint-config": "^1.0.1",
+    "dotenv": "^16.4.1",
     "electron": "^28.2.0",
+    "electron-builder": "^24.9.1",
     "electron-reload": "^2.0.0-alpha.1",
     "eslint": "^8.56.0",
     "eslint-plugin-node": "^11.1.0",

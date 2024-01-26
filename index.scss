@@ -17,29 +17,55 @@ body {
 .link,
 .goto-link {
   @include flex(unset, center, unset);
-
   gap: 4px;
   padding: 8px;
   border-radius: 8px;
   color: $predominant-color;
   background-color: $accent-color;
+
+  &:focus,
+  &:focus,
+  &:not(input):hover {
+    outline-offset: 1px;
+    outline: 1px solid $accent-color;
+  }
+
+  &:is(.goto-link):active {
+    transition: 50ms ease-in-out;
+    outline: 0px solid $accent-color;
+    outline-offset: -1px;
+  }
 }
-.ph-rocket-launch {
-  font-size: 14pt;
-  color: $predominant-color;
-}
+
 .goto-link {
   cursor: pointer;
   font-weight: bold;
 }
-input:focus,
-.goto-link:focus,
-.goto-link:hover {
-  outline: 1px solid $accent-color;
-  outline-offset: 2px;
+
+.ph-rocket-launch {
+  font-size: 14pt;
+  color: $predominant-color;
 }
-.goto-link:active {
+
+.hint {
+  font-size: 10pt;
+  text-align: center;
+}
+@keyframes wrong {
+  0% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.empty {
+  outline-offset: 2px;
+  outline: 1px solid red;
   transition: 50ms ease-in-out;
-  outline: 0px solid $accent-color;
-  outline-offset: -2px;
+  animation-fill-mode: forwards;
+  animation: wrong 0.25s ease-in-out 3 alternate;
 }

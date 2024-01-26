@@ -1,13 +1,18 @@
-const { log: alert } = require('console');
+const input = document.querySelector('input');
+const button = document.querySelector('button');
 
-document.querySelector('button')
-  .addEventListener('click', () => {
-    alert('button clicked.');
-    if (document.querySelector('input').value !== '') {
-      const url = document.querySelector('input').value;
-      document.location.href = url;
-      alert('const url defined: ' + url);
-    } else {
-      alert('const url cannot be blank.');
-    }
-  });
+button.addEventListener('click', () => {
+  if (input.value !== '') {
+    const url = input.value;
+    document.location.href = url;
+  } else {
+    const url = input;
+    url.classList.toggle('empty');
+    url.placeholder = 'URL Não Pode Estar Vazia.';
+
+    setTimeout(() => {
+      url.classList.toggle('empty');
+      url.placeholder = 'Digite ou Cole sua URL';
+    }, 500);
+  }
+});

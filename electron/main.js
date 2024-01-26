@@ -1,5 +1,8 @@
 try { require('electron-reload')('../'); } catch (error) {}
 
+const config = require('dotenv');
+config.config();
+
 const { app, Menu } = require('electron');
 const ControlWindow = require('./ControlWindow');
 
