@@ -1,0 +1,21 @@
+{
+  "name": "developer-preview",
+  "version": "1.0.0",
+  "description": "Simple URL Preview for Developers.",
+  "main": "electron/main.js",
+  "scripts": {
+    "elec": "nodemon --exec electron .",
+    "nodemn": "nodemon --exec electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@electron-internal/eslint-config": "^1.0.1",
+    "electron": "^28.2.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-node": "^11.1.0",
+    "nodemon": "^3.0.3"
+  }
+}

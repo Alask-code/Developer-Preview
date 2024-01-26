@@ -1,0 +1,4 @@
+{
+  "extends":["@electron-internal/eslint-config"],
+  "env": {"browser": true }
+}

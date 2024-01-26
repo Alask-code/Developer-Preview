@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  color: mintcream;
+  font-family: system-ui;
+  box-sizing: border-box;
+
+  -webkit-font-rendering: antialiased;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: darkorchid;
+}
+p {
+  font-size: 16pt;
+}
+
+input,
+button {
+  gap: 4px;
+  padding: 8px;
+  border-radius: 8px;
+  color: darkorchid;
+  display: flex;
+  align-items: center;
+  background-color: mintcream;
+  transition: 0.25s ease-in-out;
+  i {
+    color: darkorchid;
+    font-size: 14pt;
+  }
+}
+button {
+  cursor: pointer;
+  font-weight: bold;
+}
+input:focus,
+button:focus,
+button:hover {
+  outline: 1px solid mintcream;
+  outline-offset: 2px;
+}
+button:active {
+  transition: 50ms ease-in-out;
+  outline: 0px solid mintcream;
+  outline-offset: -2px;
+}
