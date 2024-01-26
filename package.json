@@ -5,7 +5,7 @@
   "main": "electron/main.js",
   "scripts": {
     "elec": "nodemon --exec electron .",
-    "nodemn": "nodemon --exec electron ."
+    "nodemon": "nodemon --exec electron ."
   },
   "keywords": [],
   "author": "",

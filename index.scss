@@ -1,43 +1,23 @@
+@import "scss/core";
 * {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  color: mintcream;
-  font-family: system-ui;
-  box-sizing: border-box;
-
-  -webkit-font-rendering: antialiased;
-}
-html,
-body {
-  width: 100%;
-  height: 100%;
+  color: $accent-color;
 }
 body {
+  @include flex(center, center, column);
   gap: 10px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background: darkorchid;
+  background: $predominant-color;
 }
-p {
-  font-size: 16pt;
-}
-
 input,
 button {
+  @include flex(unset, center, unset);
+
   gap: 4px;
   padding: 8px;
   border-radius: 8px;
-  color: darkorchid;
-  display: flex;
-  align-items: center;
-  background-color: mintcream;
-  transition: 0.25s ease-in-out;
+  color: $predominant-color;
+  background-color: $accent-color;
   i {
-    color: darkorchid;
+    color: $predominant-color;
     font-size: 14pt;
   }
 }
@@ -48,11 +28,11 @@ button {
 input:focus,
 button:focus,
 button:hover {
-  outline: 1px solid mintcream;
+  outline: 1px solid $accent-color;
   outline-offset: 2px;
 }
 button:active {
   transition: 50ms ease-in-out;
-  outline: 0px solid mintcream;
+  outline: 0px solid $accent-color;
   outline-offset: -2px;
 }
