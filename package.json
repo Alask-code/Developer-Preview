@@ -1,6 +1,6 @@
 {
   "name": "developer-preview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple URL Preview for Developers.",
   "main": "electron/main.js",
   "scripts": {
@@ -24,7 +24,6 @@
   "license": "ISC",
   "devDependencies": {
     "@electron-internal/eslint-config": "^1.0.1",
-    "dotenv": "^16.4.1",
     "electron": "^28.2.0",
     "electron-builder": "^24.9.1",
     "electron-reload": "^2.0.0-alpha.1",
