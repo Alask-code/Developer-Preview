@@ -1,14 +1,21 @@
 @import "scss/core";
+
 * {
   color: $accent-color;
 }
+
 body {
-  @include flex(center, center, column);
-  gap: 10px;
+  @include flex(space-evenly, center, column);
   background: $predominant-color;
 }
-input,
-button {
+.title {
+  @include flex(center, center, row);
+  gap: 4px;
+  font-size: 14pt;
+  font-weight: bold;
+}
+.link,
+.goto-link {
   @include flex(unset, center, unset);
 
   gap: 4px;
@@ -16,22 +23,22 @@ button {
   border-radius: 8px;
   color: $predominant-color;
   background-color: $accent-color;
-  i {
-    color: $predominant-color;
-    font-size: 14pt;
-  }
 }
-button {
+.ph-rocket-launch {
+  font-size: 14pt;
+  color: $predominant-color;
+}
+.goto-link {
   cursor: pointer;
   font-weight: bold;
 }
 input:focus,
-button:focus,
-button:hover {
+.goto-link:focus,
+.goto-link:hover {
   outline: 1px solid $accent-color;
   outline-offset: 2px;
 }
-button:active {
+.goto-link:active {
   transition: 50ms ease-in-out;
   outline: 0px solid $accent-color;
   outline-offset: -2px;
