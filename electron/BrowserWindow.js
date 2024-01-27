@@ -21,7 +21,7 @@ function createWindow () {
   });
   win.hide();
   win.removeMenu();
-  win.loadFile('index.html');
+  win.loadFile('src/index.html');
 
   return win;
 }

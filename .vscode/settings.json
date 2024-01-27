@@ -4,7 +4,7 @@
       "format": "compressed",
       "extensionName": ".css",
       "generateMap": false,
-      "savePath": "~/",
+      "savePath": "~/../css",
       "savePathReplacementPairs": null
     }
   ]
