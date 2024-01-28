@@ -1,4 +1,7 @@
 {
   "extends":["@electron-internal/eslint-config"],
-  "env": {"browser": true }
+  "env": {"browser": true },
+  "rules": {
+    "no-unneeded-ternary": 0
+  }
 }

@@ -1,18 +1,19 @@
 const input = document.querySelector('input');
 const button = document.querySelector('button');
 
-button.addEventListener('click', () => {
-  if (input.value !== '') {
-    const url = input.value;
-    document.location.href = url;
+button.onclick = () => {
+  const isInputEmpty = input.value !== '' ? true : false;
+  const inputUrl = input.value;
+
+  if (isInputEmpty) {
+    document.location.href = inputUrl;
   } else {
-    const url = input;
-    url.classList.toggle('empty');
-    url.placeholder = 'URL Não Pode Estar Vazia.';
+    input.classList.toggle('empty');
+    input.placeholder = 'URL Não Pode Estar Vazia.';
 
     setTimeout(() => {
-      url.classList.toggle('empty');
-      url.placeholder = 'Digite ou Cole sua URL';
+      input.classList.toggle('empty');
+      input.placeholder = 'Digite ou Cole sua URL';
     }, 500);
   }
-});
+};

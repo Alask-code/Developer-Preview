@@ -4,7 +4,7 @@ const icon = resolve(__dirname, '../', 'assets', 'icon.png');
 
 function createTray () {
   const tray = new Tray(icon);
-  tray.setToolTip('Open Preview, Right-click to See Options.');
+  tray.setToolTip('Developer Preview');
   return tray;
 }
 

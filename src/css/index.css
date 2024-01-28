@@ -1,1 +1,106 @@
-*{margin:0;padding:0;border:none;outline:none;font-family:system-ui;box-sizing:border-box;transition:.25s ease-in-out}html,body{width:100%;height:100%}*{color:#f5fffa}body{display:flex;align-items:center;justify-content:space-evenly;flex-direction:column;background:#9932cc}.title{display:flex;align-items:center;justify-content:center;flex-direction:row;gap:4px;font-size:14pt;font-weight:bold}.link,.goto-link{display:flex;align-items:center;justify-content:unset;flex-direction:unset;gap:4px;padding:8px;border-radius:8px;color:#9932cc;background-color:#f5fffa}.link:focus,.link:focus,.link:not(input):hover,.goto-link:focus,.goto-link:focus,.goto-link:not(input):hover{outline-offset:1px;outline:1px solid #f5fffa}.link:is(.goto-link):active,.goto-link:is(.goto-link):active{transition:50ms ease-in-out;outline:0px solid #f5fffa;outline-offset:-1px}.goto-link{cursor:pointer;font-weight:bold}.ph-rocket-launch{font-size:14pt;color:#9932cc}.hint{font-size:10pt;text-align:center}@keyframes wrong{0%{transform:translateX(2px)}50%{transform:translateX(-2px)}100%{transform:translateX(0px)}}.empty{outline-offset:2px;outline:1px solid red;transition:50ms ease-in-out;animation-fill-mode:forwards;animation:wrong .25s ease-in-out 3 alternate}
+@keyframes emptyInput {
+  0% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: system-ui;
+  box-sizing: border-box;
+  transition: 0.25s ease-in-out;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  color: mintcream;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background: darkorchid;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 14pt;
+  text-align: unset;
+  font-weight: bold;
+  gap: 4px;
+}
+
+.link,
+.goto-link {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  flex-direction: unset;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 8px;
+  color: darkorchid;
+  background-color: mintcream;
+}
+.link:focus, .link:focus, .link:not(input):hover,
+.goto-link:focus,
+.goto-link:focus,
+.goto-link:not(input):hover {
+  outline-offset: 1px;
+  outline: 1px solid mintcream;
+}
+.link:is(.goto-link):active,
+.goto-link:is(.goto-link):active {
+  outline-offset: -1px;
+  outline: 0px solid mintcream;
+  transition: 50ms ease-in-out;
+}
+
+.goto-link {
+  cursor: pointer;
+  font-size: unset;
+  text-align: unset;
+  font-weight: bold;
+}
+
+.ph-rocket-launch {
+  font-size: 14pt;
+  text-align: unset;
+  font-weight: unset;
+  color: darkorchid;
+}
+
+.hint {
+  font-size: 10pt;
+  text-align: center;
+  font-weight: 400;
+}
+
+.empty {
+  outline-offset: 2px;
+  outline: 1px solid red;
+  animation-fill-mode: forwards;
+  transition: 50ms ease-in-out;
+  animation: emptyInput 0.25s ease-in-out 3 alternate;
+}/*# sourceMappingURL=index.css.map */

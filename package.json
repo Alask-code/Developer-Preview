@@ -5,9 +5,9 @@
   "main": "electron/main.js",
   "scripts": {
     "elec": "electron .",
+    "nodemon": "nodemon --exec electron .",
     "build": "electron-builder -p=never",
-    "publish": "electron-builder -p=always",
-    "nodemon": "nodemon --exec electron ."
+    "publish": "electron-builder -p=always"
   },
   "build": {
     "productName": "Developer Preview",

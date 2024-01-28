@@ -1,4 +1,4 @@
-@import "core";
+@import "modules/core";
 
 * {
   color: $accent-color;
@@ -8,12 +8,13 @@ body {
   @include flex(space-evenly, center, column);
   background: $predominant-color;
 }
+
 .title {
   @include flex(center, center, row);
+  @include font(14pt, bold, unset);
   gap: 4px;
-  font-size: 14pt;
-  font-weight: bold;
 }
+
 .link,
 .goto-link {
   @include flex(unset, center, unset);
@@ -31,41 +32,30 @@ body {
   }
 
   &:is(.goto-link):active {
-    transition: 50ms ease-in-out;
-    outline: 0px solid $accent-color;
     outline-offset: -1px;
+    outline: 0px solid $accent-color;
+    transition: 50ms $def-timing-function;
   }
 }
 
 .goto-link {
   cursor: pointer;
-  font-weight: bold;
+  @include font(unset, bold, unset);
 }
 
 .ph-rocket-launch {
-  font-size: 14pt;
+  @include font(14pt, unset, unset);
   color: $predominant-color;
 }
 
 .hint {
-  font-size: 10pt;
-  text-align: center;
+  @include font(10pt, 400, center);
 }
-@keyframes wrong {
-  0% {
-    transform: translateX(2px);
-  }
-  50% {
-    transform: translateX(-2px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
+
 .empty {
   outline-offset: 2px;
   outline: 1px solid red;
-  transition: 50ms ease-in-out;
   animation-fill-mode: forwards;
-  animation: wrong 0.25s ease-in-out 3 alternate;
+  transition: 50ms $def-timing-function;
+  animation: emptyInput 0.25s $def-timing-function 3 alternate;
 }
