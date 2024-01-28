@@ -1,8 +1,11 @@
 {
-  "name": "developer-preview",
   "version": "1.1.0",
-  "description": "Simple URL Preview for Developers.",
+  "author": "Alask-code",
   "main": "electron/main.js",
+  "name": "developer-preview",
+  "license": "LGPL-3.0-or-later",
+  "description": "Simple URL Preview for Developers.",
+  "repository": "https://github.com/Alask-code/Developer-Preview",
   "scripts": {
     "elec": "electron .",
     "nodemon": "nodemon --exec electron .",
@@ -21,15 +24,14 @@
       "oneClick": false
     }
   },
-  "author": "Alask-code",
-  "license": "LGPL-3.0-or-later",
+  
   "devDependencies": {
-    "@electron-internal/eslint-config": "^1.0.1",
+    "nodemon": "^3.0.3",
+    "eslint": "^8.56.0",
     "electron": "^28.2.0",
     "electron-builder": "^24.9.1",
-    "electron-reload": "^2.0.0-alpha.1",
-    "eslint": "^8.56.0",
     "eslint-plugin-node": "^11.1.0",
-    "nodemon": "^3.0.3"
+    "electron-reload": "^2.0.0-alpha.1",
+    "@electron-internal/eslint-config": "^1.0.1"
   }
 }
