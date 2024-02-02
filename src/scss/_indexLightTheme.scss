@@ -1,0 +1,35 @@
+@media (prefers-color-scheme: light) {
+  * {
+    color: $dark-color;
+  }
+
+  body {
+    background: $light-color;
+  }
+
+  .link,
+  .goto-link {
+    color: lightgray;
+    background-color: $button-light;
+
+    &:focus,
+    &:not(.link):hover {
+      outline: 1px solid $button-light;
+    }
+
+    &:is(.goto-link):active {
+      outline: 0px solid $button-light;
+    }
+    &:is(.link)::placeholder {
+      color: $light-color;
+    }
+  }
+
+  .ph-rocket-launch {
+    color: $light-color;
+  }
+
+  .empty {
+    outline: 1px solid red;
+  }
+}

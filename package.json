@@ -1,10 +1,10 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Alask-code",
   "main": "electron/main.js",
   "name": "developer-preview",
   "license": "LGPL-3.0-or-later",
-  "description": "Simple URL Preview for Developers.",
+  "description": "Simple Web App Preview for Developers.",
   "repository": "https://github.com/Alask-code/Developer-Preview",
   "scripts": {
     "elec": "electron .",

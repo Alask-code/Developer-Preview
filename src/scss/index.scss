@@ -1,39 +1,37 @@
 @import "modules/core";
-
-* {
-  color: $accent-color;
-}
-
+@import "indexLightTheme";
+@import "indexDarkTheme";
 body {
   @include flex(space-evenly, center, column);
-  background: $predominant-color;
 }
 
 .title {
   @include flex(center, center, row);
-  @include font(14pt, bold, unset);
+  @include size(100%, fit-content);
+  i {
+    font-size: 100%;
+  }
+  h1 {
+    @include font(100%, bold, unset);
+    white-space: nowrap;
+  }
   gap: 4px;
 }
-
 .link,
 .goto-link {
   @include flex(unset, center, unset);
   gap: 4px;
   padding: 8px;
-  border-radius: 8px;
-  color: $predominant-color;
-  background-color: $accent-color;
+  border-radius: 4px;
 
   &:focus,
   &:focus,
-  &:not(input):hover {
+  &:not(.link):hover {
     outline-offset: 1px;
-    outline: 1px solid $accent-color;
   }
 
   &:is(.goto-link):active {
     outline-offset: -1px;
-    outline: 0px solid $accent-color;
     transition: 50ms $def-timing-function;
   }
 }
@@ -45,7 +43,6 @@ body {
 
 .ph-rocket-launch {
   @include font(14pt, unset, unset);
-  color: $predominant-color;
 }
 
 .hint {
@@ -54,7 +51,6 @@ body {
 
 .empty {
   outline-offset: 2px;
-  outline: 1px solid red;
   animation-fill-mode: forwards;
   transition: 50ms $def-timing-function;
   animation: emptyInput 0.25s $def-timing-function 3 alternate;

@@ -2,33 +2,38 @@ const { app } = require('electron');
 const win = require('./BrowserWindow');
 module.exports = [
   {
-    label: 'Abrir Ferramentas de Desenvolvedor',
-    click: () => {
-      win.openDevTools({ mode: 'detach' });
-    }
+    label: 'Developer Tools',
+    submenu: [
+      {
+        label: 'Open Chrome Dev Tools',
+        click: () => {
+          win.openDevTools({ mode: 'detach' });
+        }
+      },
+      {
+        label: 'Reload Page',
+        click: () => {
+          win.reload();
+        }
+      }
+    ]
   },
   {
-    label: 'Recarregar a Página',
-    click: () => {
-      win.reload();
-    }
-  },
-  {
-    label: 'Recarregar o Aplicativo',
+    label: 'Reload Application',
     click: () => {
       app.quit();
       app.relaunch();
     }
   },
   {
-    label: 'Voltar a Tela Inicial',
+    label: 'Back to Home page',
     click: () => {
       win.loadFile('src/index.html');
     }
   },
   { type: 'separator' },
   {
-    label: 'Sair',
+    label: 'Close',
     click: () => { app.quit(); }
   }
 ];

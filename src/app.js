@@ -9,11 +9,11 @@ button.onclick = () => {
     document.location.href = inputUrl;
   } else {
     input.classList.toggle('empty');
-    input.placeholder = 'URL Não Pode Estar Vazia.';
+    input.placeholder = 'URL Cannot be empty.';
 
     setTimeout(() => {
       input.classList.toggle('empty');
-      input.placeholder = 'Digite ou Cole sua URL';
+      input.placeholder = 'Type or paste URL';
     }, 500);
   }
 };
