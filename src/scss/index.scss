@@ -8,11 +8,9 @@ body {
 .title {
   @include flex(center, center, row);
   @include size(100%, fit-content);
-  i {
-    font-size: 100%;
-  }
+  i,
   h1 {
-    @include font(100%, bold, unset);
+    @include font(150%, bold, unset);
     white-space: nowrap;
   }
   gap: 4px;

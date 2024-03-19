@@ -5,8 +5,8 @@ const icon = resolve(__dirname, '../', 'build', 'icon.png');
 function createWindow () {
   const win = new BrowserWindow({
     icon,
-    width: 210,
-    height: 310,
+    width: 290,
+    height: 510,
     frame: false,
     resizable: false,
     skipTaskbar: true,
