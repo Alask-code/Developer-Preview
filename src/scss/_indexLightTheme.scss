@@ -9,7 +9,7 @@
 
   .link,
   .goto-link {
-    color: lightgray;
+    color: $dark-color;
     background-color: $button-light;
 
     &:focus,
@@ -21,15 +21,11 @@
       outline: 0px solid $button-light;
     }
     &:is(.link)::placeholder {
-      color: $light-color;
+      color: $dark-color;
     }
   }
 
   .ph-rocket-launch {
-    color: $light-color;
-  }
-
-  .empty {
-    outline: 1px solid red;
+    color: $dark-color;
   }
 }

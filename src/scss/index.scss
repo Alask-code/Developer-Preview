@@ -52,4 +52,5 @@ body {
   animation-fill-mode: forwards;
   transition: 50ms $def-timing-function;
   animation: emptyInput 0.25s $def-timing-function 3 alternate;
+  outline: 2px solid rgb(255, 166, 166);
 }

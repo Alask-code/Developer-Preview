@@ -30,72 +30,66 @@ body {
 
 @media (prefers-color-scheme: light) {
   * {
-    color: rgb(32, 32, 32);
+    color: rgb(26, 26, 26);
   }
   body {
-    background: rgb(184, 184, 184);
+    background: rgb(243, 243, 243);
   }
   .link,
   .goto-link {
-    color: lightgray;
-    background-color: rgb(92, 92, 184);
+    color: rgb(26, 26, 26);
+    background-color: rgba(0, 0, 0, 0.125);
   }
   .link:focus, .link:not(.link):hover,
   .goto-link:focus,
   .goto-link:not(.link):hover {
-    outline: 1px solid rgb(92, 92, 184);
+    outline: 1px solid rgba(0, 0, 0, 0.125);
   }
   .link:is(.goto-link):active,
   .goto-link:is(.goto-link):active {
-    outline: 0px solid rgb(92, 92, 184);
+    outline: 0px solid rgba(0, 0, 0, 0.125);
   }
   .link:is(.link)::-moz-placeholder, .goto-link:is(.link)::-moz-placeholder {
-    color: rgb(184, 184, 184);
+    color: rgb(26, 26, 26);
   }
   .link:is(.link)::placeholder,
   .goto-link:is(.link)::placeholder {
-    color: rgb(184, 184, 184);
+    color: rgb(26, 26, 26);
   }
   .ph-rocket-launch {
-    color: rgb(184, 184, 184);
-  }
-  .empty {
-    outline: 1px solid red;
+    color: rgb(26, 26, 26);
   }
 }
 @media (prefers-color-scheme: dark) {
   * {
-    color: rgb(184, 184, 184);
+    color: rgb(243, 243, 243);
   }
   body {
-    background: rgb(32, 32, 32);
+    background: rgb(26, 26, 26);
   }
   .link,
   .goto-link {
-    color: rgb(184, 184, 184);
-    background-color: rgb(0, 92, 184);
+    color: rgb(243, 243, 243);
+    background-color: rgba(255, 255, 255, 0.125);
   }
   .link:focus, .link:not(.link):hover,
   .goto-link:focus,
   .goto-link:not(.link):hover {
-    outline: 1px solid rgb(0, 92, 184);
+    outline: 1px solid rgba(255, 255, 255, 0.125);
   }
   .link:is(.goto-link):active,
   .goto-link:is(.goto-link):active {
-    outline: 0px solid rgb(0, 92, 184);
+    outline: 0px solid rgba(255, 255, 255, 0.125);
   }
   .link:is(.link)::-moz-placeholder, .goto-link:is(.link)::-moz-placeholder {
-    color: rgb(184, 184, 184);
+    color: rgb(243, 243, 243);
   }
   .link:is(.link)::placeholder,
   .goto-link:is(.link)::placeholder {
-    color: rgb(184, 184, 184);
+    color: rgb(243, 243, 243);
   }
   .ph-rocket-launch {
-    color: rgb(184, 184, 184);
-  }
-  .empty {
-    outline: 1px solid red;
+    color: rgb(243, 243, 243);
   }
 }
 body {
@@ -169,4 +163,5 @@ body {
   animation-fill-mode: forwards;
   transition: 50ms ease-in-out;
   animation: emptyInput 0.25s ease-in-out 3 alternate;
+  outline: 2px solid rgb(255, 166, 166);
 }/*# sourceMappingURL=index.css.map */
