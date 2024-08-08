@@ -3,13 +3,13 @@ $accent-color: #8d99ae;
 $font-color: #2b2d42;
 $empty-field-color: #ef233c;
 
-@media (prefers-color-scheme: light) {
-  *,
-  ::placeholder {
-    color: $font-color;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
-  }
-  .app {
-    background: $background-color;
-  }
+// @media (prefers-color-scheme: light) {
+*,
+::placeholder {
+  color: $font-color;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
 }
+.app {
+  background: $background-color;
+}
+// }

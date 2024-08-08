@@ -28,20 +28,21 @@ body {
   height: 100%;
 }
 
-@media (prefers-color-scheme: light) {
-  ::-moz-placeholder {
-    color: #2b2d42;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
-  }
-  *,
-  ::placeholder {
-    color: #2b2d42;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
-  }
-  .app {
-    background: linear-gradient(135deg, #c8ddf4 0%, #f5ccd4 50%, #b9a5ca 100%);
-  }
+::-moz-placeholder {
+  color: #2b2d42;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
 }
+
+*,
+::placeholder {
+  color: #2b2d42;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+.app {
+  background: linear-gradient(135deg, #c8ddf4 0%, #f5ccd4 50%, #b9a5ca 100%);
+}
+
 body {
   display: flex;
   align-items: center;

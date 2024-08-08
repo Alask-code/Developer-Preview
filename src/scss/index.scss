@@ -1,6 +1,6 @@
 @import "modules/core";
 @import "indexLightTheme";
-@import "indexDarkTheme";
+// @import "indexDarkTheme";
 body {
   @include flex(center, center, column);
 }
