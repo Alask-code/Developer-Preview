@@ -1,0 +1,56 @@
+@import "modules/core";
+@import "indexLightTheme";
+@import "indexDarkTheme";
+body {
+  @include flex(space-evenly, center, column);
+}
+
+.title {
+  @include flex(center, center, row);
+  @include size(100%, fit-content);
+  i,
+  h1 {
+    @include font(150%, bold, unset);
+    white-space: nowrap;
+  }
+  gap: 4px;
+}
+.link,
+.goto-link {
+  @include flex(unset, center, unset);
+  gap: 4px;
+  padding: 8px;
+  border-radius: 4px;
+
+  &:focus,
+  &:focus,
+  &:not(.link):hover {
+    outline-offset: 1px;
+  }
+
+  &:is(.goto-link):active {
+    outline-offset: -1px;
+    transition: 50ms $def-timing-function;
+  }
+}
+
+.goto-link {
+  cursor: pointer;
+  @include font(unset, bold, unset);
+}
+
+.ph-rocket-launch {
+  @include font(14pt, unset, unset);
+}
+
+.hint {
+  @include font(10pt, 400, center);
+}
+
+.empty {
+  outline-offset: 2px;
+  animation-fill-mode: forwards;
+  transition: 50ms $def-timing-function;
+  animation: emptyInput 0.25s $def-timing-function 3 alternate;
+  outline: 2px solid rgb(255, 166, 166);
+}
