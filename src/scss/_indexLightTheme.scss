@@ -1,5 +1,5 @@
-$background-color: linear-gradient(135deg, #c8ddf4 0%, #f5ccd4 50%, #b9a5ca 100%);
-$accent-color: #8d99ae;
+$background-color: whitesmoke;
+$accent-color: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 10%, rgb(0, 140, 255) 70%);
 $font-color: #2b2d42;
 $empty-field-color: #ef233c;
 
@@ -11,5 +11,9 @@ $empty-field-color: #ef233c;
 }
 .app {
   background: $background-color;
+}
+.link,
+.goto-link {
+  background: $accent-color;
 }
 // }

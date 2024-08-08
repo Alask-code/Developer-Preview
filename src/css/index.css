@@ -40,7 +40,12 @@ body {
 }
 
 .app {
-  background: linear-gradient(135deg, #c8ddf4 0%, #f5ccd4 50%, #b9a5ca 100%);
+  background: whitesmoke;
+}
+
+.link,
+.goto-link {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 10%, rgb(0, 140, 255) 70%);
 }
 
 body {
@@ -53,7 +58,7 @@ body {
 .app {
   gap: 12px;
   padding: 12px;
-  border-radius: 12px;
+  border-radius: 10px;
   width: 100%;
   height: 100%;
   display: flex;
