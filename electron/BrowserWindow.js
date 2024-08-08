@@ -10,6 +10,7 @@ function createWindow () {
     frame: false,
     resizable: false,
     skipTaskbar: true,
+    transparent: true,
     alwaysOnTop: true,
     fullscreenable: false,
     title: 'Developer Preview',

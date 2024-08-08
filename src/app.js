@@ -2,6 +2,7 @@ const input = document.querySelector('input');
 const button = document.querySelector('button');
 
 button.onclick = () => {
+  const currentPlaceholder = input.placeholder;
   const isInputEmpty = input.value !== '' ? true : false;
   const inputUrl = input.value;
 
@@ -13,7 +14,7 @@ button.onclick = () => {
 
     setTimeout(() => {
       input.classList.toggle('empty');
-      input.placeholder = 'Type or paste URL';
+      input.placeholder = currentPlaceholder;
     }, 500);
   }
 };
