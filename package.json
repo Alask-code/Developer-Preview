@@ -7,8 +7,7 @@
   "description": "Simple Web App Preview for Developers.",
   "repository": "https://github.com/Alask-code/Developer-Preview",
   "scripts": {
-    "elec": "electron .",
-    "nodemon": "nodemon --exec electron .",
+    "elec": "nodemon --exec electron .",
     "build": "electron-builder -p=never",
     "publish": "electron-builder -p=always",
     "clean-git-cache": "git rm -rf --cached ."
