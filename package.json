@@ -1,0 +1,38 @@
+{
+  "version": "1.2.1",
+  "author": "Alask-code",
+  "main": "electron/main.js",
+  "name": "developer-preview",
+  "license": "LGPL-3.0-or-later",
+  "description": "Simple Web App Preview for Developers.",
+  "repository": "https://github.com/Alask-code/Developer-Preview",
+  "scripts": {
+    "elec": "electron .",
+    "nodemon": "nodemon --exec electron .",
+    "build": "electron-builder -p=never",
+    "publish": "electron-builder -p=always",
+    "clean-git-cache": "git rm -rf --cached ."
+  },
+  "build": {
+    "productName": "Developer Preview",
+    "appId": "com.alaskcode.developerpreview",
+    "nsis": {
+      "publish": {
+        "provider": "github",
+        "owner": "Alask-code",
+        "repo": "Developer-Preview"
+      },
+      "oneClick": false
+    }
+  },
+  
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "eslint": "^8.57.0",
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3",
+    "eslint-plugin-node": "^11.1.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "@electron-internal/eslint-config": "^1.0.1"
+  }
+}
