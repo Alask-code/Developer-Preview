@@ -1,7 +1,23 @@
-$background-color: #edf2f4;
-$accent-color: #8d99ae;
-$font-color: #2b2d42;
-$empty-field-color: #ef233c;
-
 @media (prefers-color-scheme: dark) {
+  *,
+  ::placeholder {
+    color: lightgray;
+  }
+  .app {
+    background: rgb(20, 20, 20);
+  }
+  .title {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .link {
+    background: rgba(255, 255, 255, 0.4);
+    &:focus {
+      background: rgba(255, 255, 255, 0.1);
+      outline: 1px solid rgba(255, 255, 255, 0.4);
+      outline-offset: 1px;
+    }
+  }
+  .goto-link {
+    background: rgba(255, 255, 255, 0.1);
+  }
 }

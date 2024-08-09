@@ -1,20 +1,23 @@
 @import "modules/core";
 @import "indexLightTheme";
-// @import "indexDarkTheme";
+@import "indexDarkTheme";
 body {
   @include flex(center, center, column);
 }
 .app {
   gap: 12px;
   padding: 12px;
+  overflow: hidden;
   border-radius: 8px;
   @include size(100%, 100%);
   @include flex(flex-start, center, column);
 }
 .title {
   gap: 8px;
-  @include size(100%, fit-content);
-  @include font(16pt, 500, center);
+  margin: -12px;
+  padding: 8px;
+  @include size(100vw, fit-content);
+  @include font(12pt, 400, center);
   @include flex(flex-start, center, row);
 }
 .hint {
@@ -24,7 +27,7 @@ body {
 .goto-link {
   @include size(100%, fit-content);
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 .goto-link {
   cursor: pointer;

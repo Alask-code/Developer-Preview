@@ -19,7 +19,7 @@
           user-select: none;
   font-family: system-ui;
   box-sizing: border-box;
-  transition: 25ms ease-in-out;
+  transition: 50ms ease-out;
 }
 
 html,
@@ -28,26 +28,37 @@ body {
   height: 100%;
 }
 
-::-moz-placeholder {
-  color: #2b2d42;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
+@media (prefers-color-scheme: light) {
+  .app {
+    background: red;
+  }
 }
-
-*,
-::placeholder {
-  color: #2b2d42;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
+@media (prefers-color-scheme: dark) {
+  ::-moz-placeholder {
+    color: lightgray;
+  }
+  *,
+  ::placeholder {
+    color: lightgray;
+  }
+  .app {
+    background: rgb(20, 20, 20);
+  }
+  .title {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .link {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .link:focus {
+    background: rgba(255, 255, 255, 0.1);
+    outline: 1px solid rgba(255, 255, 255, 0.4);
+    outline-offset: 1px;
+  }
+  .goto-link {
+    background: rgba(255, 255, 255, 0.1);
+  }
 }
-
-.app {
-  background: whitesmoke;
-}
-
-.link,
-.goto-link {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 10%, rgb(0, 140, 255) 70%);
-}
-
 body {
   display: flex;
   align-items: center;
@@ -58,6 +69,7 @@ body {
 .app {
   gap: 12px;
   padding: 12px;
+  overflow: hidden;
   border-radius: 8px;
   width: 100%;
   height: 100%;
@@ -69,12 +81,14 @@ body {
 
 .title {
   gap: 8px;
-  width: 100%;
+  margin: -12px;
+  padding: 8px;
+  width: 100vw;
   height: -moz-fit-content;
   height: fit-content;
-  font-size: 16pt;
+  font-size: 12pt;
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -91,7 +105,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .goto-link {
