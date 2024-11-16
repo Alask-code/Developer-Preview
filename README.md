@@ -18,4 +18,4 @@
   - Facilitates building and packaging for multiple target platforms.
 
 ## Download
-Download the latest version from the [Releases](https://github.com/alask-code/developer-preview/releases) page.
+Download the latest version from the [Releases](https://github.com/alask-code/developer-preview/releases/latest) page.
