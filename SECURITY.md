@@ -11,11 +11,12 @@
 | 1.1.0 | :x:                  |
 | 1.2.0 | :x:                  | 
 | 1.2.1 | :white_check_mark:   |
+| 1.3.0 | :white_check_mark:   |
 
 ## Future Updates:
 | Version | Milestone                                                                      | Date             |
 | ------- | ------------------------------------------------------------------------------ | ---------------- |
-|  1.3.0  | [1.3.0 Milestone](https://github.com/Alask-Code/Developer-Preview/milestone/1) | Q4 2024          |
+|  1.3.0  | [1.3.0 Milestone](https://github.com/Alask-Code/Developer-Preview/milestone/1) | Released         |
 
 
 ## Reporting a Vulnerability
