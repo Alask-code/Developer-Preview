@@ -1,5 +1,7 @@
 # Security and Updates
 
+[Check latest update!](https://github.com/Alask-Code/Developer-Preview/releases/latest)
+
 | :warning: From 1.2.0 and older versions, the app has several security issues and is not recommended for production. :warning: |
 | ----------------------------------------------------------------------------------------------------------------------------- |
 
